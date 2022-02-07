@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Sneakers Store</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="O maior e-commerce de tenis do Brasil, com diversos modelos e tamanhos.">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img src="./images/icones/icon-menu.svg" alt="Menu" id="btn-menu">
+         
+                <ul id="menu-container" class="fechado">
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Masculino</a></li>
+                    <li><a href="#">Feminino</a></li>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Contatos</a></li>
+                </ul>
+            
+               <a href="#"><img src="./images/icones/logo.svg" class="logo" alt=""></a>
+            </div>
+            </nav>
+
+            <div class="container-btn-header">
+                <img src="./images/icones/icon-cart.svg" alt="Carrinho de compra" id="cart-icon" >
+                <img src="./images/image-avatar.png" alt="Icone de perfil" id="perfil-icon">
+            </div>       
+
+            <!--Preview do carrinho de compras-->     
+            <section id="cart-preview" class="fechado">
+                <div id="cart-container">
+                <span>
+                    <h4>Carrinho</h4>
+                    
+                </span>
+                <span id="product-info-cart">
+                    <span id="state-null-cart">
+                        <h2>Carrinho vazio</h2>
+                    </span>
+               
+                    </span>
+
+                
+                </span>
+                
+                <button id="finalizar-compra">Comprar</button>
+                
+            </div>
+            </section>
+        </header> 
+
+        <!--Imagem e descrição do produto-->
+        <article>
+            <section id="produto-img">
+                <img src="images/image-product-1.jpg" class="img-product">
+                <div class="container-slide">
+                    <img src="./images/icones/icon-previous.svg" class="previous-btn">
+                    <img src="./images/icones/icon-next.svg" class="next-btn">
+                </div>
+
+                <section id="btn-img-product">
+                    <img src="./images/image-product-1-thumbnail.jpg" class="btn-img">
+                    <img src="./images/image-product-2-thumbnail.jpg" class="btn-img">
+                    <img src="./images/image-product-3-thumbnail.jpg" class="btn-img">
+                    <img src="./images/image-product-4-thumbnail.jpg" class="btn-img">
+                </section>
+            </section>
+
+            <section id="info-product">
+                <h2 >Sneaker company</h2>
+                <h1 class="title-product">Tenis Edição Limitada de Outuno</h1>
+                <p class="info-product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt fugit vero maiores labore quisquam 
+                    perferendis, pariatur consectetur adipisicing elit. Nesciunt fugit vero maior.
+                </p>
+
+                <span class="info-product-price-container">
+                    <span class="info-product-price">
+                        <h3 class="product-price">R$ 125.90</h3>
+                        <span class="info-product-discount">50%</span>
+                    </span>
+
+                    <span>
+                        <p class="info-product-before"> R$ 251.80</p>
+                    </span>
+                </span>
+
+                 <span id="container-comprar"> <!-- substituir por compra -->
+                    <span class="btn-diminuir-item"><img src="./images/icones/icon-minus.svg" alt=""></span>
+                    <input type="text" readonly class="quantidade-item" value="0">
+                    <span class="btn-add-item"><img src="./images/icones/icon-plus.svg" alt=""></span>
+                </span>
+
+                <button id="add-to-cart">
+                    <img src="./images/icones/icon-cart-white.svg"  alt="Adicionar ao carrinho">Adicionar ao carrinho</button>
+            </section>
+        </article>
+
+
+        <script src="script.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+    </body>
+</html>
